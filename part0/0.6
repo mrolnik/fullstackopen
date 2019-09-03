@@ -1,0 +1,12 @@
+note over browser:
+User enter note text in the 
+input and hit the submit button.
+Then the browser add it to the list, reset the input and creates a request
+end note
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over server:
+Store the note text 
+in the database
+end note
+server-->browser: JSON-data
